@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Pinball</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8" />
+
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+
+    <script src="js/vendor/three/three.js"></script>
+
+  </head>
+
+  <body onload="init()">
+
+    <script src="js/constants.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/main.js"></script>
+    <audio id="sfxlaunch" src="balllaunch.mp3" preload="auto"></audio>
+    <audio id="soundtrack" src="soundtrack.mp3" preload="auto"></audio>
+    <audio id="click1" src="click.wav" preload="auto"></audio>
+    <audio id="fail" src="FAIL.mp3" preload="auto"></audio>
+    <audio id="click2" src="click.wav" preload="auto"></audio>
+    <audio id="ping" src="ping.mp3" preload="auto"></audio>
+    <audio id="powerup" src="powerup.wav" preload="auto"></audio>
+	<h2>Victor Grovermann</h2>
+    <h1>Score: <span id="texto"></span></h1>
+    <div id="canvas-div">
+      <!-- This div will hold the canvas created by three.js. -->
+    </div>
+
+  </body>
+
+</html>
